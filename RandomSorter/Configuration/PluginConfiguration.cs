@@ -1,6 +1,6 @@
 using MediaBrowser.Model.Plugins;
 
-namespace Jellyfin.Plugin.Template.Configuration
+namespace Jellyfin.Plugin.RandomSorter.Configuration
 {
     public enum SomeOptions
     {

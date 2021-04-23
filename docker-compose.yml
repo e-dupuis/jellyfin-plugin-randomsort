@@ -1,0 +1,24 @@
+version: "2.1"
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    environment:
+#      - PUID=1000
+#      - PGID=1000
+      - TZ=Europe/Paris
+#      - UMASK_SET=<022> #optional
+    volumes:
+      - $PWD/jellyfin_config:/config
+#    user: 1000:1000
+    group_add: 
+      - 44
+      - 109
+    ports:
+      - 8097:8096
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    devices:
+      - /dev/dri/renderD128:/dev/dri/renderD128
+      - /dev/dri/card0:/dev/dri/card0
+    restart: unless-stopped
