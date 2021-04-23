@@ -25,6 +25,6 @@ namespace Jellyfin.Plugin.RandomSorter
         /// Gets the name.
         /// </summary>
         /// <value>The name.</value>
-        public string Name => ItemSortBy.Random;
+        public string Name => "Random Sort";
     }
 }

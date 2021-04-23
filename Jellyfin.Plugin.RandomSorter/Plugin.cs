@@ -10,7 +10,7 @@ namespace Jellyfin.Plugin.RandomSorter
 {
     public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
-        public override string Name => "Random Sorter";
+        public override string Name => "Random Sorter2";
 
         private readonly Guid _id = new Guid("9eda27ec-6e19-41ff-89e6-cabeebaf3b14");
         public override Guid Id => _id;
